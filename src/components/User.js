@@ -1,7 +1,18 @@
 import React from "react";
+import logo from "../image/logo.jpg";
 
 function User({ children }) {
-  return <div className="User">User</div>;
+  return (
+    <div className="User">
+      <div className="logo">
+        <img src={logo} alt="logo" />
+      </div>
+      <div className="info">
+        <p>Code Explained</p>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  );
 }
 
 export default User;

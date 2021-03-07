@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Main from "./components/Main";
-import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import User from "./components/User";
 import AddNewTodo from "./components/AddNewTodo";
 import Projects from "./components/Projects";
@@ -12,12 +12,12 @@ import Calendar from "./components/Calendar";
 function App() {
   return (
     <div className="App">
-      <Header>
+      <Sidebar>
         <User />
         <AddNewTodo />
         <Calendar />
         <Projects />
-      </Header>
+      </Sidebar>
       <Main>
         <Todos />
         <EditTodo />
